@@ -1,0 +1,298 @@
+.cvnuevo {
+    height: 1920px;
+    padding-top: 50px;
+    background-image: url("../images/fotofondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    &_content {
+        height: 1800px;
+        background-color: $blanco;
+        padding: 0px 0px;
+
+        &_fondo {
+            background: linear-gradient(to right, #ddd 100%, $blanco 0%);
+            padding-top: 60px;
+            width: 490.23px;  
+        }
+
+        &_inicio {
+            height: 310px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0px 70px;
+            border: 2px solid $negro;
+            background-color: $blanco;
+            width: 1180px;
+            
+            & img {
+                width: 260px;
+                height: 260px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            & h2 {
+                font-size: 50px;
+                font-weight: bold;
+                font-family: 'Kanit', sans-serif;
+                letter-spacing: 8px;
+                text-transform: uppercase;
+                margin-bottom: 0px;
+            }
+
+            & span {
+                font-size: 50px;
+                font-weight: bold;
+                border-bottom: 1px solid $negro;
+                font-family: 'Kanit', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 8px;
+                padding-bottom: 5px;
+            }
+
+            & p {
+                font-size: 25px;
+                padding-top: 15px;
+                font-family: 'Kanit', sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 5px;
+            }
+        }
+    }
+
+    .cvnuevo_container {
+        display: flex;
+        justify-content: space-between;
+
+        &_cflex {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            margin: 0px 70px;
+            padding-bottom: 15px;
+
+            &bc {
+                background: linear-gradient(to right, #ddd 100%, $blanco 0%); 
+            }
+            
+            & i {
+                font-size: 35px;
+                border-radius: 50%;
+                background-color: $blanco;
+                color: $negro;
+                padding: 5px 15px;
+            }
+
+            .inegro {
+                background-color: $negro;
+                color: $blanco;
+            }
+
+            & h4 {
+                margin-left: 20px;
+                font-family: 'Kanit', sans-serif;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            & p {
+                margin-left: 20px;
+                font-family: 'Kanit', sans-serif;
+                margin-bottom: 0px;
+            }
+
+            & a {
+                color: $negro;
+                margin-bottom: 0px;
+            }
+        }
+
+        &_izqflex {
+            padding-right: 70px;
+
+            & h3 {
+                margin: 0 40px 0px 70px;
+                padding-top: 70px;
+                border-bottom: 1px solid $negro;
+                padding-bottom: 10px;
+                font-family: 'Kanit', sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+            }
+        }
+
+        &_cursos {
+
+            & p {
+                margin: 0px 70px 10px 70px;
+                font-family: 'Kanit', sans-serif;
+                font-size: 18px;
+
+                &:first-child {
+                    padding-top: 15px;
+                }
+
+                &:last-child {
+                    padding-bottom: 20px
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+
+    .cvnuevo {
+        height: 2350px;
+
+        &_content {
+            width: 950px;
+            height: 2250px;
+
+            &_inicio {
+                width: 810px;
+                height: 310px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 70px;
+                
+                & h2 {
+                    font-size: 30px;
+                }
+                
+                & span {
+                    font-size: 30px;
+                }
+
+                & p {
+                    font-size: 20px;
+                }
+
+                & img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    
+    .cvnuevo {
+        height: 3150px;
+
+        &_content {
+            width: 950px;
+            height: 3050px;
+
+            &_fondo {
+                background: linear-gradient(to right, #ddd 100%, $blanco 0%);
+                padding-top: 60px;
+                width: 650px;  
+            }
+
+            &_inicio {
+                width: 570px;
+                height: 200px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 50px;
+                
+                & h2 {
+                    font-size: 21px;
+                }
+                
+                & span {
+                    font-size: 21px;
+                }
+
+                & p {
+                    font-size: 12px;
+                }
+
+                & img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .cvnuevo {
+        height: 3510px;
+        text-align: center;
+
+        &_container {
+
+            &_cflex {
+                flex-direction: column;
+                align-items: flex-start;
+
+                & p {
+                    margin: 0px;
+                    font-family: 'Kanit', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+
+                & h4 {
+                    margin: 0px;
+                    font-family: 'Kanit', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        &_content {
+            width: 720px;
+            height: 3400px;
+
+            &_fondo {
+                background: linear-gradient(to right, #ddd 100%, $blanco 0%);
+                padding-top: 60px;
+                width: 470px;  
+            }
+
+            &_inicio {
+                width: 390px;
+                height: 250px;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0px 50px;
+                flex-direction: column;
+                
+                & h2 {
+                    font-size: 18px;
+                }
+                
+                & span {
+                    font-size: 18px;
+                }
+
+                & p {
+                    font-size: 12px;
+                }
+
+                & img {
+                    width: 110px;
+                    height: 110px;
+                }
+            }
+        }
+    }
+}
+
+
+    

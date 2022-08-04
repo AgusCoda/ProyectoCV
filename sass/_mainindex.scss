@@ -1,0 +1,100 @@
+.inicio {
+    height: 100vh;
+    padding: 0px 0px;
+    
+    &2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 84vh; 
+    }
+    
+    &_celeste {
+        color: $blanco;
+    }
+
+    &_blanco {
+        color: $negro;
+    }
+}
+
+.inicio_pres {
+    border: 2px solid $blanco;
+    padding: 10px 15px; 
+    border-radius: 10px;
+    width: 500px;
+    height: 180px;
+    background-color: rgba(34,34,34, 0.6);
+    
+    & h1 {
+        font-size: 39px;
+        font-family: 'Kanit', sans-serif;
+        font-weight: bold;
+        max-width: 500px;
+    }
+}
+
+.inicio_pres_tec {
+
+    & h2 {
+        font-size: 25px;
+        color: $blanco;
+        font-family: 'Kanit', sans-serif;
+        font-weight: bold;
+    }
+
+    & p {
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: $blanco;
+    }
+}
+
+.gridprueba {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+    color: $blanco;
+    gap: 30px;
+}
+
+.gridprueba_org {
+    display: flex;
+    align-items: flex-start;
+
+    & img {
+        margin-left: 10px;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.rombo {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+         
+        &_icono {
+            color: $blanco;
+            font-size: 50px;
+            
+            &:hover {
+                color: rgba(255,255,255, 0.5);
+            }
+        }
+}
+
+@media (max-width: 991px) {
+    .inicio2 {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+
+
