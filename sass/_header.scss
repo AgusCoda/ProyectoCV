@@ -5,7 +5,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    position: fixed;
     width: 100%;
 
     & h2 {
@@ -34,10 +33,6 @@ nav a {
 
 nav a:hover {
     color: white;
-}
-
-.ey {
-    background-color: #1d1d1d;
 }
 
 @media (max-width: 700px) {

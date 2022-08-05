@@ -20,7 +20,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  position: fixed;
   width: 100%; }
   header h2 {
     color: white; }
@@ -41,9 +40,6 @@ nav a {
 
 nav a:hover {
   color: white; }
-
-.ey {
-  background-color: #1d1d1d; }
 
 @media (max-width: 700px) {
   header {
@@ -183,6 +179,15 @@ nav a:hover {
       padding-top: 20px;
       margin: 0px 70px;
       padding-bottom: 15px; }
+      .cvnuevo .cvnuevo_container_cflex_text {
+        margin-left: 20px; }
+        .cvnuevo .cvnuevo_container_cflex_text h4 {
+          font-family: 'Kanit', sans-serif;
+          font-weight: bold;
+          margin-bottom: 5px; }
+        .cvnuevo .cvnuevo_container_cflex_text p {
+          font-family: 'Kanit', sans-serif;
+          margin-bottom: 0px; }
       .cvnuevo .cvnuevo_container_cflexbc {
         background: linear-gradient(to right, #ddd 100%, #fff5ff 0%); }
       .cvnuevo .cvnuevo_container_cflex i {
@@ -194,15 +199,6 @@ nav a:hover {
       .cvnuevo .cvnuevo_container_cflex .inegro {
         background-color: #000;
         color: #fff5ff; }
-      .cvnuevo .cvnuevo_container_cflex h4 {
-        margin-left: 20px;
-        font-family: 'Kanit', sans-serif;
-        font-weight: bold;
-        margin-bottom: 5px; }
-      .cvnuevo .cvnuevo_container_cflex p {
-        margin-left: 20px;
-        font-family: 'Kanit', sans-serif;
-        margin-bottom: 0px; }
       .cvnuevo .cvnuevo_container_cflex a {
         color: #000;
         margin-bottom: 0px; }
@@ -278,19 +274,12 @@ nav a:hover {
   .cvnuevo {
     height: 3510px;
     text-align: center; }
-    .cvnuevo_container_cflex {
-      flex-direction: column;
-      align-items: flex-start; }
-      .cvnuevo_container_cflex p {
-        margin: 0px;
-        font-family: 'Kanit', sans-serif;
-        font-weight: bold;
-        margin-bottom: 5px; }
-      .cvnuevo_container_cflex h4 {
-        margin: 0px;
-        font-family: 'Kanit', sans-serif;
-        font-weight: bold;
-        margin-bottom: 5px; }
+    .cvnuevo .cvnuevo_container_cflex {
+      flex-direction: column; }
+      .cvnuevo .cvnuevo_container_cflex i {
+        margin-bottom: 10px; }
+      .cvnuevo .cvnuevo_container_cflex_text {
+        margin-left: 0; }
     .cvnuevo_content {
       width: 720px;
       height: 3400px; }
@@ -303,8 +292,37 @@ nav a:hover {
         height: 250px;
         justify-content: space-evenly;
         align-items: center;
-        padding: 0px 50px;
-        flex-direction: column; }
+        padding: 0px 50px; }
+        .cvnuevo_content_inicio h2 {
+          font-size: 18px; }
+        .cvnuevo_content_inicio span {
+          font-size: 18px; }
+        .cvnuevo_content_inicio p {
+          font-size: 12px; }
+        .cvnuevo_content_inicio img {
+          width: 110px;
+          height: 110px; } }
+
+@media (max-width: 575px) {
+  .cvnuevo {
+    height: 3630px;
+    text-align: center;
+    background-image: none; }
+    .cvnuevo .cvnuevo_container_cflex_text {
+      margin-left: 0px; }
+    .cvnuevo_content {
+      width: 550px;
+      height: 3570px; }
+      .cvnuevo_content_fondo {
+        background: linear-gradient(to right, #ddd 100%, #fff5ff 0%);
+        padding-top: 60px;
+        width: 480px; }
+      .cvnuevo_content_inicio {
+        width: 400px;
+        height: 250px;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px 50px; }
         .cvnuevo_content_inicio h2 {
           font-size: 18px; }
         .cvnuevo_content_inicio span {
@@ -417,7 +435,7 @@ nav a:hover {
         .contacto_form textarea:focus::placeholder {
           font-size: 0px; }
     .contacto_form form {
-      padding: 10px; }
+      padding: 0px 10px; }
       .contacto_form form input {
         width: 100%;
         height: 50px;
@@ -462,6 +480,25 @@ nav a:hover {
 
 .paddt {
   padding: 100px 0px; }
+
+@media (max-width: 991px) {
+  .contacto {
+    height: 750px; }
+    .contacto_desc {
+      padding: 0px;
+      padding-bottom: 20px; }
+      .contacto_desc p {
+        padding-bottom: 20px; }
+    .contacto_content img {
+      height: 560px;
+      object-fit: cover;
+      object-position: left;
+      padding: 10px 0px; }
+    .contacto_form_inflex {
+      flex-direction: column;
+      gap: 20px; }
+    .contacto_form_buttonflex {
+      padding: 20px; } }
 
 .footer {
   height: 210px;
