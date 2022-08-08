@@ -87,7 +87,13 @@
 
             & div {
                 padding: 10px;
-            }
+            }  
+        }
+
+        &_buttonflex {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
             & button {
                 width: 50%;
@@ -104,13 +110,7 @@
                     color: #2b2b2b;
                     background-color: $blanco;
                 }
-            }  
-        }
-
-        &_buttonflex {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            }
         }
         
         &_inflex {
@@ -151,6 +151,48 @@
                 object-fit: cover;
                 object-position: left;
                 padding: 10px 0px;
+                width: 40%;
+            }
+        }
+
+        &_form {
+
+            &_inflex {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            &_buttonflex {
+                padding: 20px;
+
+                & button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+
+    .contacto {
+        height: 750px;
+        background-image: url("../images/codephoto.jpg");
+        background-size: cover;
+        
+        &_desc {
+            padding: 0px;
+            padding-bottom: 20px;
+
+            & p {
+                padding-bottom: 20px;
+            }
+        }
+
+        &_content {
+            
+            & img {
+                display: none;
             }
         }
 
