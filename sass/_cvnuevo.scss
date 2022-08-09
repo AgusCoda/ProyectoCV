@@ -90,6 +90,10 @@
                     font-family: 'Kanit', sans-serif;
                     margin-bottom: 0px;
                 }
+
+                & a:hover {
+                    color: #1d1d1d;
+                }
             }
 
             &bc {
@@ -315,7 +319,7 @@
 @media (max-width: 575px) {
 
     .cvnuevo {
-        height: 3830px;
+        height: 3850px;
         text-align: center;
 
         .cvnuevo_container_cflex_text {
@@ -329,11 +333,59 @@
             &_fondo {
                 background: linear-gradient(to right, #ddd 100%, $blanco 0%);
                 padding-top: 60px;
-                width: 100%;  
+                width: 100%;
             }
 
             &_inicio {
                 width: 320px;
+                height: 230px;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                
+                & h2 {
+                    font-size: 18px;
+                }
+                
+                & span {
+                    font-size: 18px;
+                }
+
+                & p {
+                    font-size: 12px;
+                }
+
+                & img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+    }        
+}
+
+@media (max-width: 399px) {
+
+    .cvnuevo {
+        height: 3950px;
+        text-align: center;
+
+        .cvnuevo_container_cflex_text {
+            margin-left: 0px;
+        }
+
+        &_content {
+            width: 370px;
+            height: 3850px;
+
+            &_fondo {
+                background: linear-gradient(to right, #ddd 100%, $blanco 0%);
+                padding-top: 60px;
+                width: 100%;
+            }
+
+            &_inicio {
+                width: 290px;
                 height: 230px;
                 justify-content: space-around;
                 align-items: center;

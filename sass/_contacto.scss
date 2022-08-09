@@ -126,7 +126,7 @@
     }
 }
 
-.paddt {
+.espaciocontacto {
     padding: 100px 0px;
     background-color: #1d1d1d;
 }
@@ -177,10 +177,15 @@
 
 @media (max-width: 575px) {
 
+    .espaciocontacto {
+        padding: 0px;
+    }
+
     .contacto {
         height: 750px;
         background-image: url("../images/codephoto.jpg");
         background-size: cover;
+        background-position: center center;
         padding-top: 10px;
         
         &_desc {

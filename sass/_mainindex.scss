@@ -98,15 +98,11 @@
     bottom: 80px;
     
     &_icono {
-        background: linear-gradient(to right, $negro 100%, $negro 50%);
-        -webkit-background-clip: text;
-        color: rgba(0, 0, 0, 0);
+        color: $negro;
         font-size: 60px;
 
         &:hover {
-            background: linear-gradient(to right, $negro 100%, $negro 50%);
-            -webkit-background-clip: text;
-            color: rgba(0, 0, 0, 0);
+            color: #1d1d1d;
             font-size: 60px;
         }
     }
@@ -119,14 +115,6 @@
         &_main {
             flex-direction: column;
             justify-content: space-evenly;
-
-            &_text {
-                
-            }
-        }
-
-        &_tec {
-            width: 380px;
         }
     }
 }
@@ -140,7 +128,7 @@
             justify-content: space-evenly;
 
             &_text {
-                width: 380px;
+                width: 370px;
 
                 & h1 {
                     font-size: 28px;
@@ -163,26 +151,6 @@
                 }
                 
             }
-        }
-
-        
+        }  
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // background: linear-gradient(to right, $blanco 100%, $negro 50%);
-            // -webkit-background-clip: text;
-            // color: rgba(0, 0, 0, 0);
-            // font-size: 60px;
-           
+}   
