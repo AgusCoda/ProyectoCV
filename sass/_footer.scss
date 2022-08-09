@@ -43,7 +43,6 @@
                 cursor: pointer;
                 color: $blanco;
                 background-color: $negro;
-                
             }
         }
     }
@@ -55,7 +54,7 @@
 
         & p {
         text-align: center;
-        font-size: 18px;
+        font-size: 15px;
         color: $blanco;
         font-family: 'Kanit', sans-serif;
         }
@@ -63,4 +62,34 @@
 }
 
 @media (max-width: 767px) {
+    .footer {
+
+        &_icons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 10px;
+            
+            & i {
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .footer {
+
+        &_icons {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 10px;
+            
+            & i {
+                margin: 0px;
+                font-size: 18px;
+            }
+        }
+    }
 }

@@ -1,83 +1,188 @@
 .inicio {
     height: 100vh;
     padding: 0px 0px;
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .inicio_pres_tec {
-
-//     & h2 {
-//         font-size: 25px;
-//         color: $blanco;
-//         font-family: 'Kanit', sans-serif;
-//         font-weight: bold;
-//     }
-
-//     & p {
-//         font-size: 20px;
-//         font-family: 'Kanit', sans-serif;
-//         color: $blanco;
-//     }
-// }
-
-// .gridprueba {
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-template-rows: repeat(2, 1fr);
-//     align-items: center;
-//     justify-items: center;
-//     margin-top: 30px;
-//     color: $blanco;
-//     gap: 30px;
-// }
-
-// .gridprueba_org {
-//     display: flex;
-//     align-items: flex-start;
-
-//     & img {
-//         margin-left: 10px;
-//         height: 40px;
-//         width: 40px;
-//     }
-// }
-
-.rombo {
+    &_main {
+        height: 100vh;
         display: flex;
-        justify-items: center;
-        justify-content: center;
-         
-        &_icono {
-            background: linear-gradient(to right, red 50%, yellow 50%);
-            -webkit-background-clip: text;
-            color: rgba(0, 0, 0, 0);
-            font-size: 50px;
-            
-            &:hover {
-                background: linear-gradient(to right, red 50%, yellow 50%);
-                -webkit-background-clip: text;
-                color: rgba(0, 0, 0, 0);
-                font-size: 50px;
+        align-items: center;
+        justify-content: space-between;
+
+        &_text {
+            font-family: 'Kanit', sans-serif;
+            color: $blanco;
+            border: 2px solid $blanco;
+            padding: 15px 20px;
+            border-radius: 5px;
+            background-color: rgba(29, 29, 29, 0.9);
+
+            & span {
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            & h1 {
+                font-size: 40px;
+            }
+
+            & h2 {
+                font-size: 40px;
+            }
+
+            & h3 {
+                font-size: 40px;
+            }
+
+            & button {
+                margin-top: 50px;
+                border: 1px solid $blanco;
+                border-radius: 5px;
+                background-color: #1d1d1d;
+                color: $blanco;
+                padding: 15px;
+                font-size: 25px;
+                letter-spacing: 3px;
+
+                &:hover {
+                    background-color: $blanco;
+                    color: #1d1d1d;
+                }
             }
         }
+
+        &_tec {
+
+            & h2 {
+                font-size: 30px;
+                color: $negro;
+                font-family: 'Kanit', sans-serif;
+                font-weight: bold;
+            }
+
+            & p {
+                font-size: 25px;
+                font-family: 'Kanit', sans-serif;
+                color: $negro;
+            }
+
+            .gridprueba {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                align-items: center;
+                justify-items: center;
+                margin-top: 30px;
+                color: $negro;
+                gap: 30px;
+
+                &_org {
+                    display: flex;
+                    align-items: flex-start;
+
+                    & img {
+                        margin-left: 10px;
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }       
+        }
+    }
 }
+
+.rombo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 80px;
+    
+    &_icono {
+        background: linear-gradient(to right, $negro 100%, $negro 50%);
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, 0);
+        font-size: 60px;
+
+        &:hover {
+            background: linear-gradient(to right, $negro 100%, $negro 50%);
+            -webkit-background-clip: text;
+            color: rgba(0, 0, 0, 0);
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .inicio {
+
+        &_main {
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            &_text {
+                
+            }
+        }
+
+        &_tec {
+            width: 380px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+
+    .inicio {
+
+        &_main {
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            &_text {
+                width: 380px;
+
+                & h1 {
+                    font-size: 28px;
+                    margin: 0px;
+                }
+
+                & span {
+                    font-size: 28px;  
+                }
+
+                & h3 {
+                    font-size: 28px;
+                }
+            }
+
+            &_tec {
+
+                .gridprueba {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                
+            }
+        }
+
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // background: linear-gradient(to right, $blanco 100%, $negro 50%);
+            // -webkit-background-clip: text;
+            // color: rgba(0, 0, 0, 0);
+            // font-size: 60px;
+           

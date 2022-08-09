@@ -128,6 +128,7 @@
 
 .paddt {
     padding: 100px 0px;
+    background-color: #1d1d1d;
 }
 
 @media (max-width: 991px) {
@@ -141,6 +142,7 @@
 
             & p {
                 padding-bottom: 20px;
+                color: $blanco;
             }
         }
 
@@ -179,13 +181,20 @@
         height: 750px;
         background-image: url("../images/codephoto.jpg");
         background-size: cover;
+        padding-top: 10px;
         
         &_desc {
             padding: 0px;
             padding-bottom: 20px;
 
+            & h2 {
+                padding-left: 20px;
+            }
+
             & p {
                 padding-bottom: 20px;
+                padding-left: 20px;
+                font-weight: bold;
             }
         }
 
@@ -205,6 +214,7 @@
 
             &_buttonflex {
                 padding: 20px;
+                margin-bottom: 20px;
             }
         }
     }

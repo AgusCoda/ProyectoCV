@@ -36,26 +36,38 @@
 
 <body>
 <!-- HEADER -->
-<header class="container">
-    <div class="logo">
-        <a href="./index.html"><img src="./images/logoahc1.jpg" alt="" class="logo-img"></a>
+<header>
+    <div>
+      <nav class="navbar navbarfondo navbar-expand-lg navbar__ig sticky-top">
+        <div class="container">
+          <a class="navbar-brand mx-2 fs-2" href="./index.html"><img src="./images/logoahc1.jpg" alt="Logo de AHC"></a>
+          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-dark"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-lg-row-reverse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link mx-2 fs-4" aria-current="page" href="./index.html">Inicio</a>
+              <a class="nav-link mx-2 fs-4" href="./index.html#cv">Mi CV</a>
+              <a class="nav-link mx-2 fs-4" href="./index.html#contacto">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav>
-        <a href="">Inicio</a>
-        <a href="">Mi CV</a>
-        <a href="">Contacto</a>
-    </nav>
-</header>
+  </header>
 <main>
         <!-- INICIO INDEX -->
 <div class="inicio container-fluid">
-    <div class="inicio2 container">
-        <div class="inicio_pres" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-            <h1 class="inicio_blanco"><span>Hola! Mi nombre es</span></h1>
-            <h1 class="inicio_celeste">Agustin Hernan Codarini</h1>
-            <h1 class="inicio_blanco"><span>Estudiante de</span> Coderhouse.</h1>
+    <div class="inicio_main container">
+        <div class="inicio_main_text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h1>Hola, mi nombre es</h1>
+            <h2><span>Agustin Hernan Codarini</span></h2>
+            <h3>Estudiante de <span>Coderhouse</span></h3>
+            <!-- <a href="./index.html#cv"><button>Aprende mas sobre mi</button></a> -->
         </div>
-        <div class="inicio_pres_tec" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="inicio_main_tec" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2>Tecnologias aplicadas:</h2>
             <div class="gridprueba">
                 <div class="gridprueba_org">
@@ -88,8 +100,8 @@
     <div class="rombo container-xl">
         <a href="./index.html#cv" class="rombo_icono"><i class="bi bi-chevron-double-down"></i></a>
     </div>
-    </div>
 </div>
+    
 <!-- CVNUEVO -->
 <div class="cvnuevo" id="cv">
     <div class="container cvnuevo_content">
@@ -229,7 +241,7 @@
     </div>
 </div>
 <!-- CONTACTO -->
-<div class="paddt">
+<div class="paddt container-fluid" id="contacto">
 <div class="container contacto">
     <div class="contacto_content">
         <div class="contacto_desc">
